@@ -58,8 +58,21 @@ para crear una variable primero tenemos que crear el enlace y luego darle el nom
 
 `let` y `var` ambos nos permiten crear variables su unica diferencia es el alcanse ambito o `escope` (averiguar)
 ## 3. OPERADORES
-## 4. FUNCIONES
-## 5. METODOS PARA TRABAJAR CON DATOS ESTRUCTURADOS
+ Su clasificacion general se devide en tres:
+ 1. Operadores unarios
+    - Los operadores unarios son aquellos que estan ubicados a la izquierda del valor y que retornan un nuevo valor.
+      - Operador de negacion
+ 2. Operadores binarios
+    - Los operadores vinarios son aquellos que estan en medio de dos valores y que restornan un unico valor.
+      - Operadores aritmeticos
+      - Operadores de comparacion
+      - Operadores lógicos
+ 3. Operadores ternarios
+    - Los operadores ternarios son aquellos que evaluan tres valores y que reternoan un solo valor.
+      - Operador condicional
+## 4. CONTROLES DE FLUJO
+## 5. FUNCIONES
+## 6. METODOS PARA TRABAJAR CON DATOS ESTRUCTURADOS
 Cuando trabajamos con datos estructurados (como arreglos o listas y objetos), necesitamos realizar ciertas operaciones básicas para gestionar, manipular y organizar la información. Estas operaciones son universales en casi todos los lenguajes de programación.
 
 1. ✅ Acceder
@@ -109,3 +122,5 @@ Reorganizar los elementos de un arreglo según un criterio (alfabético, numéri
 
 ¿Para qué sirve?
 Mejorar la lectura, búsqueda o presentación de datos. 
+
+## 7. DOM
