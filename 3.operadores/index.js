@@ -30,6 +30,10 @@ let OR = true || false    // ||-->OR
 let NOT = !true           // !--->NOT
 
 // operadores ternarios
+// El primer valor debe ser un valor booleano
+// El segundo valor se mostrara si el primer valor es verdadero
+// El tercer valor se mostrara si el primer valor es falso
+
 let respuesta=5<7?"esta bien mascota":"como va ser mayor animal"
 console.log(respuesta)
 
