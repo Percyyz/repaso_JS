@@ -71,6 +71,16 @@ para crear una variable primero tenemos que crear el enlace y luego darle el nom
     - Los operadores ternarios son aquellos que evaluan tres valores y que reternoan un solo valor.
       - Operador condicional
 ## 4. CONTROLES DE FLUJO
+Nuestros programas en javascript contienen mas de una sentencia y las sentencias son ejecutados una a una como si fuera una historia, de arriba hacia abajo como un camino recto.
+
+### 1. Controles de desision (if-else)
+Javascript nos permite crear caminos alterntivos en nuestros programas, dependiendo de una desision a esto se le conoce como caminos o ejecucuion condicional que ejecutara una sentencia u otra teniendo en cuenta la condicion y asi podemos crear multiples caminos u oppciones en otros programas.
+
+Si tenemos una condicion verdadera se ejevitara una sententencia y si tenemos una condicion falasa se ejevutara otra sentencia totalmente distinta.
+
+**Observacion:** la ejecucion condicional rompe el flujo normal de una programa
+### 2. Bucles (for)
+### 3. Bucles (while)
 ## 5. FUNCIONES
 ## 6. METODOS PARA TRABAJAR CON DATOS ESTRUCTURADOS
 Cuando trabajamos con datos estructurados (como arreglos o listas y objetos), necesitamos realizar ciertas operaciones básicas para gestionar, manipular y organizar la información. Estas operaciones son universales en casi todos los lenguajes de programación.
