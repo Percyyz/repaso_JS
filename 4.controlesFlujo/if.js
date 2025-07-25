@@ -30,3 +30,49 @@ if (firtsNumber>secondNumber) {
 }
 
 // crear un programa que me muestre el numero en texto
+// FORMA UNO:
+let numero = 1;
+let texto = "";
+
+if (numero >= 0 && numero <= 10) {
+    let numerosTexto = ["cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez"];
+    texto = numerosTexto[numero];
+} else {
+    texto = "Número fuera de rango";
+}
+
+console.log("El número es: " + texto);
+
+
+
+// FORMA DOS:
+let número = 5;
+
+if (número == 0) {
+  número = "cero";
+} else if (número == 1) {
+  número = "uno";
+} else if (número == 2) {
+  número = "dos";
+} else if (número == 3) {
+  número = "tres";
+} else if (número == 4) {
+  número = "cuatro";
+} else if (número == 5) {
+  número = "cinco";
+} else if (número == 6) {
+  número = "seis";
+} else if (número == 7) {
+  número = "siete";
+} else if (número == 8) {
+  número = "ocho";
+} else if (número == 9) {
+  número = "nueve";
+} else if (número == 10) {
+  número = "diez";
+} else {
+  número = "número fuera de rango";
+}
+
+console.log(número); 
+
