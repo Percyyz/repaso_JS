@@ -80,7 +80,19 @@ Si tenemos una condicion verdadera se ejevitara una sententencia y si tenemos un
 
 **Observacion:** la ejecucion condicional rompe el flujo normal de una programa
 ### 2. Bucles (for)
+En JavaScript, los bucles for nos permiten repetir una o varias instrucciones varias veces de forma controlada. Esto se conoce como repetición o iteración, y se usa cuando sabemos cuántas veces queremos que se repita un bloque de código.
+
+El bucle for tiene tres partes: la inicialización (por ejemplo, iniciar una variable en 0), la condición (que se evalúa antes de cada repetición), y la actualización (que suele incrementar o modificar el valor de la variable). Si la condición es verdadera, se ejecuta el bloque de código; si es falsa, el bucle se detiene.
+
+**Observación**: el bucle for es ideal cuando conocemos de antemano el número de repeticiones que deben realizarse.
 ### 3. Bucles (while)
+En JavaScript, el bucle while nos permite ejecutar repetidamente una sentencia o bloque de código mientras una condición específica se mantenga verdadera. Este tipo de bucle es útil cuando no sabemos exactamente cuántas veces se debe repetir una acción, pero sí sabemos la condición que debe cumplirse para seguir repitiendo.
+
+Primero se evalúa la condición: si es verdadera, se ejecuta el bloque de código; luego vuelve a evaluar la condición, y así sucesivamente hasta que sea falsa. Una vez que la condición deja de cumplirse, el bucle termina.
+
+**Observación:** el uso incorrecto del bucle while puede generar un bucle infinito si la condición nunca llega a ser falsa.
+
+
 ## 5. FUNCIONES
 ## 6. METODOS PARA TRABAJAR CON DATOS ESTRUCTURADOS
 Cuando trabajamos con datos estructurados (como arreglos o listas y objetos), necesitamos realizar ciertas operaciones básicas para gestionar, manipular y organizar la información. Estas operaciones son universales en casi todos los lenguajes de programación.
