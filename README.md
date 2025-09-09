@@ -30,7 +30,7 @@ Son datos que siempre existiran
    - array de tipo mixto
  - como esta estructura un array en jacascript
 
-![alt text](public/image.png)
+![alt text](public/imagen.jpeg)
 2. Objetos (Diccionario)
    
    Son similares a las listas con la unica diferencia que en vez de tene rvalor e indice sus elementos trabajan con clave:valor
@@ -94,6 +94,31 @@ Primero se evalúa la condición: si es verdadera, se ejecuta el bloque de códi
 
 
 ## 5. FUNCIONES
+Las funciones en JavaScript son bloques de codigo que se ejecutan de manra independiente, podemos decir tambien que son miniprogramas que toman datos como dentrada y retornan otros datos como salida.
+
+Las funciones son fundamentales para el correcto ordenaminto de nuestro codigo, ademas nos permite separar de una manera mas ordenda nuestra logica y evitar repetir el codigo muchas veces.
+
+Existen tre tipos de funciones:
+
+### tipos de funciones:
+#### 1. Funciones por declaracion
+Son funciones clasicas en JavaScript, se escriben con la palabra `function` y tienen hoisting osea es decir que se pueden usar antes de que esten escritas el codigo
+
+Este tipo de funcion es la mas conocida y la mas usada, su estrucutra es la siguiente:
+
+![alt text](public/imagen2.png)
+
+#### 2. funciones por expresion
+Es una funcion que permite guardar una funcion dentro de una variable, lo que nos permitira posteriormente ejecutar la variable como si fuera una funcion.
+#### 3. funciones flecha(arrow function)
+Las funciones flecha son una forma más corta y moderna de escribir funciones en JavaScript, introducidas en ES6 (2015).
+Se llaman así porque usan la sintaxis de una flecha (`=>`) en lugar de la palabra reservada `function`.
+
+Su principal característica es que no crean su propio contexto de `this`, sino que heredan el `this` del lugar donde fueron escritas.
+Esto las hace especialmente útiles cuando trabajamos dentro de objetos, clases o funciones que requieren mantener el mismo `this`.
+
+>[!TIP] 
+**this**--> es una palabra especial que hace referencia al objeto que está “dueño” o en el contexto donde se está ejecutando una función.
 ## 6. METODOS PARA TRABAJAR CON DATOS ESTRUCTURADOS
 Cuando trabajamos con datos estructurados (como arreglos o listas y objetos), necesitamos realizar ciertas operaciones básicas para gestionar, manipular y organizar la información. Estas operaciones son universales en casi todos los lenguajes de programación.
 
