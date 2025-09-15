@@ -120,8 +120,46 @@ Esto las hace especialmente útiles cuando trabajamos dentro de objetos, clases 
 >[!TIP] 
 **this**--> es una palabra especial que hace referencia al objeto que está “dueño” o en el contexto donde se está ejecutando una función.
 ## 6. METODOS PARA TRABAJAR CON DATOS ESTRUCTURADOS
-Cuando trabajamos con datos estructurados (como arreglos o listas y objetos), necesitamos realizar ciertas operaciones básicas para gestionar, manipular y organizar la información. Estas operaciones son universales en casi todos los lenguajes de programación.
+Son funciones que dan funcionalidades extra alos tipos de datos en los cuales se aplica, un metodo es antecedido por un tipo de dato y ui punto.
 
+**ejemplo**
+
+el ejemplo mas claro de un metodo es el `.length` - este metodo nospermite o nos retorna la contidad d caracteres de un string o la cantidad de elementos de una lista
+```js
+"hola".lehgth // 4
+[2,5,4,6,5].length // 5
+```
+> [!TIP] 
+los metodos en su mayoria solo se alican a tipos de datos string, listas y objetos, en su gran parte son aplicados en listas
+
+### 6.1. metodos para string - cadenas de texto
+#### length:
+Debuelve la longitud de una cadena
+```js
+let mensaje = "hola como estan"
+console.log(mensaje) //15
+```
+#### toLowerCase:
+devuelbe una cadena en ninusculas
+```js
+let texto ="HOLA"
+console.log(texto.toLowerCase()) //hola
+```
+#### toUpperCase:
+debuelve una cadena en mayusculas
+```js
+let texto="hola"
+console.log(texto.toUpperCase()) // HOLA
+```
+#### concat:
+Este metodo combina el texto de dos o mas numeros
+```js
+let nombres="kcapa"
+let nombres="hola"
+// let concatenado= nombre+saludo
+console.log(saludo.concat(nombre)) // hola kcapa
+```
+### 6.2. metodos para listas - arrays
 1. ✅ Acceder
 
 ¿Qué es?
@@ -169,5 +207,9 @@ Reorganizar los elementos de un arreglo según un criterio (alfabético, numéri
 
 ¿Para qué sirve?
 Mejorar la lectura, búsqueda o presentación de datos. 
+#### 6.3. metodos para objetos
+
+Cuando trabajamos con datos estructurados (como arreglos o listas y objetos), necesitamos realizar ciertas operaciones básicas para gestionar, manipular y organizar la información. Estas operaciones son universales en casi todos los lenguajes de programación.
+
 
 ## 7. DOM
