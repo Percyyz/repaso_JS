@@ -159,57 +159,125 @@ let nombres="hola"
 // let concatenado= nombre+saludo
 console.log(saludo.concat(nombre)) // hola kcapa
 ```
+#### Trim:
+Este metodo elimina los espacios que existen al inicio y al final de una cadena o texto.
+
+```js
+let texto="   hola"
+texto.trim()
+```
+
+#### Slice:
+Este metodo nos permite extraer partes de una cadena especificando sus indices donde comenzr y asta donde mostrar
+```js
+let parrafo= " hola soy percy"
+parrafo.slice(9, 14) // percy
+parrafo.slice(5, 8) // soy
+```
+
+#### Split:
+Este metodo retorna una lista basandose en un separador que se le indique 
+```js
+let parrafo="solo se que nada se"
+parrafo.split(" ") // ["solo", "se", "que", "nada", "se"]
+
+let url="google.com/search?=gatitos"
+let gatito=url.split("=") // ["google.com/search?", "gatitos"]
+console.log(gatitos[1]) // gatitos
+```
 ### 6.2. metodos para listas - arrays
-1. ✅ Acceder
+#### 1. ➕ Para crear una lista
 
-¿Qué es?
-Obtener el valor de un elemento o propiedad dentro de una estructura de datos como un areglo (`array`) o un objeto (`objet`) sin modificarlo. 
+- **¿Qué es?**
 
-¿Para qué sirve?
-Permite leer información sin modificarla. 
-
-2. ✏️ Modificar
-
-¿Qué es?
-Cambie el valor de un elemento o propiedad dentro de una estructura ya existente. 
-
-¿Para qué sirve?
-Actualizar información cuando cambia, como corregir un dato o reflejar nuevos valores. 
-
-3. ➕ Crear
-
-¿Qué es?
 Definir una nueva estructura de datos desde cero. 
 
-¿Para qué sirve?
+- **¿Para qué sirve?**
+
 Inicializar listas, objetos o colecciones vacías o con valores iniciales. 
+```js
+let lista=[]
+```
 
-4. 🔧 Insertar
+#### 2. 🔧 Agregando elementos a una lista
 
-¿Qué es?
+- **¿Qué es?**
+
 Agregue uno o más elementos nuevos en una posición específica del arreglo (al inicio, al final o en medio). 
 
-¿Para qué sirve?
+- **¿Para qué sirve?**
+
 Ampliar una lista con nuevos datos sin reemplazar los existentes. 
+```js
+lista[0]=Manzana
+```
+- **PUSH**
+  
+  El metodo `.push` agrega elementos al final de una lista
+  ```js
+   let lista=[]
+   lista.push("Manzana")
+   ```
 
-5. ❌ Eliminar
+- **UNSHIFT**
+  
+  El metodo `.unshift` agrega elementos al inicio de una lista
+  ```js
+   let amigos=['ronny', 'Lisbeth', 'pedro']
+   amigos.unshift("juan")
+   ```
 
-¿Qué es?
-Remove un elemento o propiedad de la estructura de datos. 
+#### Removiendo elementos de una lista
+- **POP**
+  
+  El metodo `.pop` al contarrio de push extrae el ultimo elemento de una lista.
 
-¿Para qué sirve?
-Limpiar datos obsoletos, incorrectos o innecesarios. 
+- **SHIFT**
 
-6. 🔀 Ordenar
+  El metodo `.shift` al contario de unshift extrae el primer elementoi de una lista
+#### Eliminar elementos de una lista
+- **DELETE**
+  
+  Elimina un elemento en base a sus indice
+  ```js
+  let texto=["hola", "como", " ", "estas"]
+  delete texto[2]
+  ```
+- **SPLICE**
+  
+  Este metodo elemina el elemento en base a su posision (indice) y a la cantidad de elementos a eliminar.
+  ```js
+  let vocales=["a", "e", "e", "i", "o", "u"]
+  vocales.splice(2,1)
+  ```
 
-¿Qué es?
-Reorganizar los elementos de un arreglo según un criterio (alfabético, numérico, por fecha, etc.). 
+#### Combinar o unir listas (arrays)
+- **CONCAT**
+  
+  Este metodo crea un nuevo array que contiene los elementos del array original seguido por los elementos de uno o mas arrays proporcionados
+  ```js
+  let amigosPrimaria=["jorge", "alfredo", "luis",]
+  let amigosSecundaria=["raul", "carlos", "santi",]
+  let amigosSuperior=["jusue", "maria", "jans",]
+  let friends=amigosPrimaria.concat(amigosSecundaria, amigosSuperior)
+  ```
+Una funcion de tipo callback son funciones que reciben como parametro una funcion anonima.
+```js
+let amigos=['dara', 'jose', 'ashly']
+amigos.find((nombre)=>{nombre=='dara'})
+```
+```js
+let numeros=[5, 4, 20]
+let numeros=numeros.filter(num=>num<6)
+```
+#### Metodos para iterar elementos
 
-¿Para qué sirve?
-Mejorar la lectura, búsqueda o presentación de datos. 
-#### 6.3. metodos para objetos
+#### metodos para buscar elementos
+### 6.3. metodos para objetos
 
 Cuando trabajamos con datos estructurados (como arreglos o listas y objetos), necesitamos realizar ciertas operaciones básicas para gestionar, manipular y organizar la información. Estas operaciones son universales en casi todos los lenguajes de programación.
 
 
-## 7. DOM
+## 7. es6
+## 8. DOM
+Esn una api del navegador y es el que maneja request y el respons y esla que permite que cliente se pueda comunicar con el navegador 
