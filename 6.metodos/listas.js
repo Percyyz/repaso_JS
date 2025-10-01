@@ -50,3 +50,33 @@ let amigosSecundaria=["raul", "carlos", "santi",]
 let amigosSuperior=["jusue", "maria", "jans",]
 let friends=amigosPrimaria.concat(amigosSecundaria, amigosSuperior) // concatena listas
 console.log(friends)
+
+// forEach ---> va recorrer y aplicar todo el elemento de la lista
+let numeros=[1,2,3,4,5]
+numeros.forEach(n=>{console.log(n**2)})
+
+
+// map ---> va recorrer y aplicar todo el elemento de la lista y genera una nueva lista 
+let numbers=[1, 2, 3, 4, 5, 6]
+let nuevoNumeros=numbers.map(n=>{return n+1})
+console.log(nuevoNumeros)
+
+
+// includes ---> busca un elemento en la lista y devuelve true o false
+let nombres=["juan", "pedro", "maria", "luisa"]
+let estaJuan=nombres.includes("juan")
+console.log(estaJuan)
+
+let estaJunior=nombres.includes("junior")
+console.log(estaJunior)
+
+
+// filter ---> filtra los elementos de una lista que cumplan con una condicion
+let nmrs=[2, 4, 6, 8, 1, 5]
+let nNumeros= nmrs.filter(n=>{return n<4})
+console.log(nNumeros)
+
+// de una lista de numeros del 1 al 10 usando filter eliminar el numero 1
+let numerosDel1Al10=[1,2,3,4,5,6,7,8,9,10]
+let numerosFiltrados=numerosDel1Al10.filter(n=>{return n!==1})
+console.log(numerosFiltrados)
