@@ -270,14 +270,73 @@ amigos.find((nombre)=>{nombre=='dara'})
 let numeros=[5, 4, 20]
 let numeros=numeros.filter(num=>num<6)
 ```
-#### Metodos para iterar elementos
-
-#### metodos para buscar elementos
+#### Metodos para iterar una lista (elementos)
+- **forEach**
+  
+  Esta metodo ejecuta una funcion anonima por cada elemento de un array 
+  ```js
+  let numeros=[1, 2, 3, 4, 5, 6]
+  numeros.forEach(n=>{console.log(n+1)}) // esto esto es una funcion anonima de tipo flecha
+  ```
+- **map**
+  
+  Esta metodo ejecuta una funcion anonima por cada elemento de un array, generando una ueva lista
+  ```js
+  let numeros=[1, 2, 3, 4, 5, 6]
+  let nuevosNumeros=numeros.map(n=>{return n+1})
+  ```
+#### metodos para buscar elementos en una lista
+- **includes**
+  
+  Este metodo busca un valor en espesifico y devuelve un valor booleano en caso de encontar el valor buscado retorna True caso contrario False
+  ```js
+  let vocales= ['a', 'i', 'o', 'u']
+  let buscaE= vocales.includes('e')
+  // esto retornara False
+  ```
+- **filter**
+  
+  Este metodo se usa para encontrar elementos dentro de una lista que cumpla con sierta condicion.
+  ```js
+  let nmrs=[2, 4, 6, 8, 1, 5]
+  // deseo una lista con los numeros con una lista que sea menor a 4
+  let nNumeros= nmrs.filter(n=>{n<4>})
+  ```
+- **find**
+  
+  Este metodo se usa para encontrar el primer elemento que cumpla con sierta consicion, a diferencia del filter slo retorna un elemento el que coincida con la condicion
+  ```js
+  let lisNumeros=[10, 11, 3, 20, 5]
+  mayorDiez=lisNumeros.find(n=>{return n>10})
+  console.log(mayorDiez)  //slo erornara el primero en este caso el 11
+  ```
 ### 6.3. metodos para objetos
 
 Cuando trabajamos con datos estructurados (como arreglos o listas y objetos), necesitamos realizar ciertas operaciones básicas para gestionar, manipular y organizar la información. Estas operaciones son universales en casi todos los lenguajes de programación.
+#### Creando un objeto
+```js
+// Esto es un objeto o diccionario vacio
+let objeto={}
+```
+#### Agregando elementos a un objeto
+Recuerden que ele elemneto de un objeto estan conformado por `clave : valor`
+```js
+objeto["nombre"]="percy"
+objeto["edad"]=20
+objeto["cui"]=71500856
+```
+#### Actualizando elementos a un objeto
+Para realizar la actualizacion de un valor del elemento teenmos que acceder atravez de sus vlave y asignarle el nuevo valor.
 
-
+**observacion** la clave debe ser la misma a actualizar de no existir la clave creara una nueva
+```js
+objeto["edad"]=22
+```
+#### eliminando elementos de nuestro objeto
+Para eliminar un elemento de un  objeto hacemos uso de un operador unario `delete`.
+```js
+delete objeto.nombre
+```
 ## 7. es6
 ## 8. DOM
 Esn una api del navegador y es el que maneja request y el respons y esla que permite que cliente se pueda comunicar con el navegador 
