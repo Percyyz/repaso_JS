@@ -338,5 +338,21 @@ Para eliminar un elemento de un  objeto hacemos uso de un operador unario `delet
 delete objeto.nombre
 ```
 ## 7. es6
+### Arrow function
+### Destructuring
+- Este es una tecnica para el desempaquetado de litas u obetos en variables individuales
+
+- Este tecnica facilita el acceso a los elementos de una lista u objeto
+  ```js
+  let persona={
+    nombre:"percy",
+    edad:20,
+  }
+  console.log(persona.nombre)
+  ```
+  ```js
+  // destructuring
+  let {nombre, edad}=persona
+  ```
 ## 8. DOM
 Esn una api del navegador y es el que maneja request y el respons y esla que permite que cliente se pueda comunicar con el navegador 
